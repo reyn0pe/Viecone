@@ -1,0 +1,22 @@
+{
+  "logo":"https://telegra.ph/file/dab27a1667290553d73d7.jpg",
+  "name": "Viecone",
+  "description": "Bot pemberi tag anggota untuk Grup telegram.",
+  "env": {
+    "TOKEN": {
+      "description": "Masukkan bot token Get It From @botfather.",
+      "value": "2085075204:AAF2KmyR9Qf9WATMh4SgjJLyf_LUhkBsllQ"
+    },
+    "APP_ID": {
+      "description": "Dapatkan nilai ini dari my.telegram.org! Tolong jangan mencuri.",
+      "value": "1234456"
+    },
+    "API_HASH": {
+      "description": "Dapatkan nilai ini dari my.telegram.org! Tolong jangan mencuri.",
+      "value": "jdpsjoejie3od9sjssjdodj"
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
