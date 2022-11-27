@@ -15,9 +15,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
+api_id = int(os.environ.get("21753427"))
+api_hash = os.environ.get("e21112c4c6bc8fcf5e794489c153cd49")
+bot_token = os.environ.get("5675088639:AAH_mjhEqM7qwtafC2BH_AFSUO6FVPJi2o0")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 moment_worker = []
