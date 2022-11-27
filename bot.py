@@ -50,7 +50,7 @@ async def help(event):
                          Button.url('Channel', 'https://t.me/urcessaword'), 
                       ], 
                       [
-                        Button.url('Add Me Baby', 'https://t.me/VieconeBot?startgroup=true'),   
+                        Button.url('Add Me Baby', 'https://t.me/prdxrthcldsxbot?startgroup=true'),   
                       ]
                    ), 
                     link_preview=False
