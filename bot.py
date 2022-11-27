@@ -26,14 +26,14 @@ moment_worker = []
 #start
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("Halo bocah kontol, Welcome Buat Lo Di Bot Nya Abang Rey Ganteng\nOiya Gue Bisa Bantu Lo Buat Tag Anak Anak Kontol Biar Muncul\nButuh Bantuan? /help ",
+  await event.reply("Halo bocah kontol, Welcome Buat Lo Di Bot Nya Paradox Universe\nOiya Gue Bisa Bantu Lo Buat Tag Anak Anak Kontol Biar Pada Muncul\nButuh Bantuan? /help ",
                     buttons=(
                       [
-                         Button.url('ᴜᴘᴅᴀᴛᴇs', 'https://t.me/ReyUpdatesCH'), 
-                         Button.url('sᴜᴘᴘᴏʀᴛ', 'https://t.me/reyn0pe'), 
+                         Button.url('Group', 'https://t.me/paradoxuniverse'), 
+                         Button.url('Channel', 'https://t.me/urcessaword'), 
                       ], 
                       [
-                        Button.url('ᴍᴀsᴜᴋɪɴ ᴀᴋᴜ sᴀʏᴀɴɢ ᴀʜʜ', 'https://t.me/VieconeBot?startgroup=true'),   
+                        Button.url('Add Me Baby', 'https://t.me/prdxrthcldsxbot?startgroup=true'),   
                       ]
                    ), 
                     link_preview=False
@@ -42,15 +42,15 @@ async def start(event):
 #help
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Tandai Menu Bantuan Bot Bantuan**\n\nPrintah: /all \n Anda dapat menggunakan perintah ini dengan teks yang ingin Anda sampaikan kepada orang lain. \n`Contoh: /all Rey Ganteng Banget Awokaowk!` \nAnda dapat menggunakan perintah ini sebagai jawaban. setiap pesan Bot akan menandai pengguna untuk menjawab pesan"
+  helptext = "**Buat Lo Semua Beban Kayak Kontol Yang Gak Tau Apa Apa**\n\nPrintah: /all \n Anda dapat menggunakan perintah ini dengan teks yang ingin Anda sampaikan kepada orang lain. \n`Contoh: /all Paradox Kece Cuiii Kata Yael!` \nAnda dapat menggunakan perintah ini sebagai jawaban. setiap pesan Bot akan menandai pengguna untuk menjawab pesan"
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('ᴜᴘᴅᴀᴛᴇs', 'https://t.me/ReyUpdatesCH'), 
-                         Button.url('ᴄʜᴀɴɴᴇʟ', 'https://t.me/reyn0pe'), 
+                         Button.url('Group', 'https://t.me/paradoxuniverse'), 
+                         Button.url('Channel', 'https://t.me/urcessaword'), 
                       ], 
                       [
-                        Button.url('ᴍᴀsᴜᴋɪɴ ᴀᴋᴜ sᴀʏᴀɴɢ ᴀʜʜ', 'https://t.me/VieconeBot?startgroup=true'),   
+                        Button.url('Add Me Baby', 'https://t.me/VieconeBot?startgroup=true'),   
                       ]
                    ), 
                     link_preview=False
@@ -71,7 +71,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("Hanya Admin yang dapat menggunakannya.")
+    return await event.respond("Woii Kontol Mau Ngapain Lo Jelas Jelas Lo Tuh Bukan Admin Inget Lo Tu Cuman Beban Ortu Lo.")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -82,7 +82,7 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("Saya tidak dapat menyebutkan Anggota untuk Posting Lama!")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Beri aku Argumen. Contoh: `/tag Ahh aku ange`")
+    return await event.respond("Beri aku Argumen. Contoh: `/tag Diago Ganteng Kata Anak Paradox`")
   else:
     return await event.respond("Balas Pesan atau Berikan Beberapa Teks Untuk Disebutkan!")
     
@@ -124,5 +124,5 @@ async def mentionall(event):
 #yaha kuch kachra tha ya fr extra features 🥲🥲removed now
 
 print("Mulai Berhasil Bergabung dengan Dukungan")
-print("¯\_(ツ)_/¯ Butuh Bantuan Gabung @ReyUpdatesCH")
+print("¯\_(ツ)_/¯ Butuh Bantuan Tanyakan Sama Bos Yael @yaelxz")
 client.run_until_disconnected()
